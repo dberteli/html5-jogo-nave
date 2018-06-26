@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Processando o Canvas após a tag</title>
+    </head>    
+    <body>
+        <canvas id="meu_canvas" width="300" height="300"></canvas>
+        
+    </body>
+
+    <script>
+        var canvas = document.getElementById('meu_canvas');
+        var context = canvas.getContext('2d');
+        
+        // desenhar um retangulo        
+        context.fillStyle = 'red';
+        context.fillRect(50, 50, 100, 100);
+        context.strokeStyle = 'blue';
+        context.lineWidth = '10';
+        context.strokeRect(50,50,100,100);        
+    </script>
+</html>
